@@ -1,0 +1,29 @@
+<mat-toolbar color="primary">
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>My Ciber</span>
+    <span class="example-spacer"></span>
+   <div class="Container">
+
+    <button mat-button color="" (click)="irHome()">Home</button >
+        <button mat-button color="" (click)="irCurso()">Curso</button>
+        <button mat-button color="" (click)="irPost()">Post</button>
+        <button mat-button color="" (click)="irEstado()">Estado</button>
+   </div> 
+    
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+      <mat-icon>search</mat-icon>
+    </button>
+    <button (click)="logout()" mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+      <mat-icon>power_settings_new</mat-icon>
+    </button>
+  </mat-toolbar>
+<hr/>
+<style>
+   .Container{
+    margin-left: 30px;
+   }
+</style>
+<router-outlet />
